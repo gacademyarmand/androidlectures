@@ -59,4 +59,9 @@ class MainActivity : AppCompatActivity() {
         startActivity(calIntent)
     }
 
+    fun sendFlightBroadcast(view: View) {
+        var flightIntent = Intent("ihave.flight")
+        sendBroadcast(flightIntent)
+    }
+
 }
